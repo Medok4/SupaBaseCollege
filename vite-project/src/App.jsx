@@ -12,6 +12,16 @@ import Sec2_galka from '../src/assets/Sec2_galka.png'
 import Sec3_img from '../src/assets/Sec3_img.png'
 import Sec4_icon from '../src/assets/Sec4_icon.png'
 import Sec4_icon2 from '../src/assets/Sec4_icon2.png'
+import Api_icon1 from '../src/assets/Api_icon1.png'
+import Api_icon2 from '../src/assets/Api_icon2.png'
+import Testy from '../src/assets/Testy.png'
+import Int_but from '../src/assets/Int_but.png'
+import Int_img from '../src/assets/Int_img.png'
+import Ftwitter from '../src/assets/Ftwitter.png'
+import Fgit from '../src/assets/Fgit.png'
+import F1 from '../src/assets/F1.png'
+import F2 from '../src/assets/F2.png'
+import F3 from '../src/assets/F3.png'
 
 function App() {
   
@@ -136,6 +146,134 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* simple api */}
+      <section className='w-full h-[700px] bg-regular-100 flex justify-center items-end'>
+        <div className='w-[1120px] h-[511px] flex justify-between'>
+          {/* simple api info */}
+          <div className='w-[429px] h-full flex flex-col gap-[16px]'>
+            <p className='text-[36px]/[43px] text-white'>Simple and convenient APIs</p>
+            <p className='text-[14px] text-graybr-100'>Built from the ground-up for interoperable authentication.</p>
+            <p className='text-[14px] text-graybr-100'>Fast and easy to implement using our powerful library clients. <br /> Asset optimization and image transformation coming soon!</p>
+            <div className='w-full h-[189px] flex justify-between'>
+              <div className='w-[192px] h-full flex flex-col justify-between items-start'>
+                <img src={Api_icon1} alt="" />
+                <p className='text-white text-[18px]'>CDN integration</p>
+                <p className='text-graybr-100 text-[14px]'>Serve from the edge to <br /> reduce latency.</p>
+                <p className='text-[12px] text-blueagain w-[97px] h-[20px] bg-bluebg text-center rounded-2xl'>Coming soon</p>
+              </div>
+
+              <div className='w-[192px] h-full flex flex-col justify-between items-start'>
+                <img src={Api_icon2} alt="" />
+                <p className='text-white text-[12px]'>Auto transformation & <br /> optimisation</p>
+                <p className='text-graybr-100 text-[14px]'>Resize and compress your <br /> media before you serve it.</p>
+                <p className='text-[12px] text-blueagain w-[97px] h-[20px] bg-bluebg text-center rounded-2xl'>Coming soon</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className='w-[526px] h-[356px] flex flex-col justify-between'>
+              <div className='w-full h-[30px] flex gap-[22px] items-center'>
+                <p className='w-[91px] h-full rounded-[4px] bg-gray2-100 text-white text-[11px] flex items-center justify-center'>Upload a file</p>
+                <p className='text-[12px] text-grayergray-100'>Download a file</p>
+                <p className='text-[12px] text-grayergray-100'>List view</p>
+                <p className='text-[12px] text-grayergray-100'>Move and rename files</p>
+                <p className='text-[12px] text-grayergray-100'>Delete files</p>
+              </div>
+              <img src={Testy} alt="" />
+            </div>
+        </div>
+      </section>
+
+      {/* integrates */}
+      <section className='w-full h-[357px] flex justify-center bg-regular-100'>
+        <div className='w-[1120px] h-full flex justify-between'>
+          <div className='w-[429px] [h-325px] flex flex-col justify-between'>
+            <p className='text-[36px] text-white'>Integrates natively with Supabase Auth</p>
+            <p className='text-[14px] text-graybr-100'>Using Postgres Row Level Security to create Object access rules.</p>
+            <p className='text-[14px] text-graybr-100'>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
+            <button className='w-[205px] h-[36px] rounded-[4px] flex justify-center items-center gap-[8px] bg-gray2-100'><img src={Int_but} alt="" /><p className='text-[14px] text-graybr-100'>Expore documentation</p></button>
+          </div>
+
+          <div className='w-[528px] h-full flex flex-col justify-between'>
+              <div className='w-full h-[30px] flex gap-[20px] items-center'>
+                <p className='w-[164px] h-full rounded-[4px] bg-gray2-100 text-white text-[11px] flex items-center justify-center'>Public access to a bucket</p>
+                <p className='text-[12px] text-grayergray-100'>Public access to a folder</p>
+                <p className='text-[12px] text-grayergray-100'>Authenticated access to a bucket</p>
+              </div>
+
+              <img src={Int_img} alt="" />
+          </div>
+        </div>
+        
+      </section>
+
+      {/* last section */}
+      <section className='bg-regular-100 w-full h-[400px] flex flex-col justify-center items-center gap-[32px]'>
+        <p className='text-[36px] text-grayb'>Build in a weekend, <span className='text-white'>scale to millions</span></p>
+        <button className='h-[30px] w-[128px] bg-butbg-100 text-white font-bold text-[12px] rounded-[4px] cursor-pointer'><p>Start your project</p></button>
+      </section>
+
+      <footer className='w-full h-[602px] flex flex-col justify-center items-center bg-regular-100 gap-[100px]'>
+        {/* footer b1 */}
+        <div className='w-[1120px] h-[208px] flex'>
+          {/* icons */}
+          <div className='w-[352px] h-full'>
+            <img src={logo} alt="" />
+            <div className='w-full h-[20px] flex gap-[30px] items-center mt-[32px]'>
+              <img src={Ftwitter} alt="" /><img src={Fgit} alt="" />
+            </div>
+          </div>
+
+          {/* all texts */}
+          <div className='w-[736px] h-full flex justify-between'>
+            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+              <p className='text-[14px] text-grayergray-100'>Product</p>
+              <p className='text-[14px] text-eeeeee-100'>Database</p>
+              <p className='text-[14px] text-eeeeee-100'>Authentication</p>
+              <p className='text-[14px] text-eeeeee-100'>Storage</p>
+              <p className='text-[14px] text-eeeeee-100'>Functions</p>
+              <p className='text-[14px] text-eeeeee-100'>Coming soon</p>
+              <p className='text-[14px] text-eeeeee-100'>Pricing</p>
+            </div>
+
+            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+              <p className='text-[14px] text-grayergray-100'>Resources</p>
+              <p className='text-[14px] text-eeeeee-100'>Support</p>
+              <p className='text-[14px] text-eeeeee-100'>Case Studies</p>
+              <p className='text-[14px] text-eeeeee-100'>System Status</p>
+              <p className='text-[14px] text-eeeeee-100'>Terms of service</p>
+            </div>
+
+            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+              <p className='text-[14px] text-grayergray-100'>Developers</p>
+              <p className='text-[14px] text-eeeeee-100'>Documentation</p>
+              <p className='text-[14px] text-eeeeee-100'>API Reference</p>
+              <p className='text-[14px] text-eeeeee-100'>Guides</p>
+            </div>
+
+            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+              <p className='text-[14px] text-grayergray-100'>Company</p>
+              <p className='text-[14px] text-eeeeee-100'>Blog</p>
+              <p className='text-[14px] text-eeeeee-100'>Open Source</p>
+              <p className='text-[14px] text-eeeeee-100'>Humans.txt</p>
+              <p className='text-[14px] text-eeeeee-100'>Lawyers.txt</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        {/* last block */}
+        <div className='w-[1120px] h-[73px] border-t-[1px] border-grayergray-100 flex justify-between items-center'>
+          <p className='text-[16px] text-grayergray-100'>© Supabase Inc</p>
+          <div className='w-[140px] h-[40px] flex justify-between items-center'>
+            <img src={F1} alt="" />
+            <img src={F2} alt="" />
+            <img src={F3} alt="" />
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
