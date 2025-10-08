@@ -29,53 +29,53 @@ function App() {
   return (
     <>
       <nav className='w-full h-[65px] bg-regular-100 flex justify-center'>
-        <div className='h-full w-[1116px] flex justify-between'>
-          <div className='h-full w-[506px] flex items-center justify-between'>
-            <img src={logo} alt=""/>
-            <div className='flex h-full w-[74px] items-center justify-between'>
+        <div className='h-full w-[1116px] flex justify-between max-xl:w-[900px] max-lg:w-[700px] max-sm:w-[300px]'>
+          <div className='h-full w-[506px] flex items-center justify-between max-lg:w-[400px] max-sm:w-[100px]'>
+            <img src={logo} className='max-sm:w-[100px]' alt=""/>
+            <div className='flex h-full w-[74px] items-center justify-between max-sm:hidden'>
               <p className='font-roboto text-eeeeee-100 cursor-pointer'>Product</p>
               <img className='cursor-pointer' src={arrow_down} alt="" />
             </div>
-            <div className='flex h-full w-[96px] items-center justify-between'>
+            <div className='flex h-full w-[96px] items-center justify-between max-sm:hidden'>
               <p className='font-roboto text-eeeeee-100 cursor-pointer'>Developers</p>
               <img className='cursor-pointer' src={arrow_down} alt="" />
             </div>
-            <div className='flex h-full w-[30px] items-center justify-between'>
+            <div className='flex h-full w-[30px] items-center justify-between max-sm:hidden'>
               <p className='font-roboto text-eeeeee-100 cursor-pointer'>Beta</p>
             </div>
-            <div className='flex h-full w-[47px] items-center justify-between'>
+            <div className='flex h-full w-[47px] items-center justify-between max-sm:hidden'>
               <p className='font-roboto text-eeeeee-100 cursor-pointer'>Pricing</p>
             </div>
           </div>
-          <div className='h-full w-[197px] flex justify-between items-center'>
-            <button className='h-[30px] w-[128px] bg-butbg-100 text-white font-bold text-[12px] rounded-[4px] cursor-pointer'><p>Start your project</p></button>
+          <div className='h-full w-[197px] flex justify-between items-center max-sm:w-[150px]'>
+            <button className='h-[30px] w-[128px] bg-butbg-100 text-white font-bold text-[12px] rounded-[4px] cursor-pointer max-sm:w-[100px]'><p>Start your project</p></button>
             <button className='font-bold text-[14px] text-white cursor-pointer'><p>Sign in</p></button>
           </div>
         </div>
       </nav>
 
       {/* Store and Serve */}
-      <section className='w-full h-[589px] bg-regular-100 flex justify-center'>
-        <div className='h-full w-[1280px] flex justify-between items-end'>
-          <div className='w-[566px] h-[461px] flex flex-col justify-between items-start'>
+      <section className='w-full h-[589px] bg-regular-100 flex justify-center max-lg:h-[400px] max-sm:h-[700px]'>
+        <div className='h-full w-[1280px] flex justify-between items-end max-xl:w-[900px] max-lg:w-[600px] max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-[50px]'>
+          <div className='w-[566px] h-[461px] flex flex-col justify-between items-start max-xl:w-[400px] max-lg:h-[361px] max-sm:items-center max-sm:text-center'>
             <div className='flex h-[32px] w-[108px] justify-between items-center'>
               <img src={Sec1_icon} alt="" />
               <p className='text-[18px] text-white'>Storage</p>
             </div>
-            <p className='text-white font-bold text-[48px]'>Store and serve <br /> any type of digital content</p>
-            <p className='text-[14px] text-graybr-100'>An open source Object store service with unlimited scalability, for <br /> any file type.</p>
-            <p className='text-[14px] text-graybr-100'>With custom policies and permissions that are familiar and easy to <br /> implement.</p>
-            <button className='h-[38px] w-[133px] bg-butbg-100 text-white font-bold text-[14px] rounded-[4px] cursor-pointer relative left-[45px]'><p>Start your project</p></button>
+            <p className='text-white font-bold text-[48px] max-lg:text-[20px]'>Store and serve <br /> any type of digital content</p>
+            <p className='text-[14px] text-graybr-100 max-sm:w-[350px]'>An open source Object store service with unlimited scalability, for <br /> any file type.</p>
+            <p className='text-[14px] text-graybr-100 max-sm:w-[350px]'>With custom policies and permissions that are familiar and easy to <br /> implement.</p>
+            <button className='h-[38px] w-[133px] bg-butbg-100 text-white font-bold text-[14px] rounded-[4px] cursor-pointer relative left-[45px] max-sm:left-[0px]'><p>Start your project</p></button>
           </div>
-          <img className='relative bottom-[30px]' src={sec1_img} alt="" />
+          <img className='relative bottom-[30px] max-xl:w-[400px] max-lg:w-[300px]' src={sec1_img} alt="" />
         </div>
       </section>
 
       {/* able-fast-able */}
-      <section className='w-full h-[384px] bg-regular-100 flex justify-center items-center'>
-        <div className='w-[1120px] h-[192px] flex justify-between'>
+      <section className='w-full h-[384px] bg-regular-100 flex justify-center items-center max-sm:h-[800px]'>
+        <div className='w-[1120px] h-[192px] flex justify-between max-xl:w-[900px] max-lg:w-[650px] max-sm:w-[300px] max-sm:flex-col max-sm:h-[700px] max-sm:items-center'>
           {/* sec2_d1 */}
-          <div className='w-[280px] h-[192px] flex flex-col justify-between items-start'>
+          <div className='w-[280px] h-[192px] flex flex-col justify-between items-start max-lg:w-[200px]'>
             <div className='h-[32px] w-[170px] flex justify-between items-center'>
               <img src={Sec2_icon1} alt="" />
               <img src={Sec2_X} alt="" />
@@ -88,14 +88,14 @@ function App() {
           </div>
 
           {/* sec2_d2 */}
-          <div className='h-full w-[280px] flex flex-col gap-[16px] items-start'>
+          <div className='h-full w-[280px] flex flex-col gap-[16px] items-start max-lg:w-[200px] max-sm:h-[200px]'>
             <img src={Sec2_signal} alt="" />
             <p className='text-[18px] text-white'>Lightning fast</p>
             <p className='text-[18px] text-graybr-100'>Thin API server layer that leverages Postgres' permissions and performance.</p>
           </div>
 
           {/* sec2_d3 */}
-          <div className='h-full w-[280px] flex flex-col gap-[16px] items-start'>
+          <div className='h-full w-[280px] flex flex-col gap-[16px] items-start max-lg:w-[200px] max-sm:h-[200px]'>
             <img src={Sec2_galka} alt="" />
             <p className='text-[18px] text-white'>Dependable</p>
             <p className='text-[13px] text-graybr-100'>Enterprise-level scalability and durability.</p>
@@ -104,13 +104,13 @@ function App() {
       </section>
 
       {/* Sleek */}
-      <section className='w-full h-[875px] bg-regular-100 flex justify-center items-center'>
-        <div className='w-[1280px] h-[875px]'>
+      <section className='w-full h-[875px] bg-regular-100 flex justify-center items-center max-lg:h-[1200px] max-sm:h-[1300px]'>
+        <div className='w-[1280px] h-[875px] max-xl:w-[900px] max-lg:w-[600px] max-sm:w-[300px] max-sm:h-[1200px]'>
           <p className='text-[48px] text-white line-'>Sleek dashboard for managing your media</p>
           <p className='text-[18px] text-graybr-100 mt-[16px]'>A complete Object Explorer so that any of your team can use.</p>
           <p className='text-[14px] text-graybr-100 mt-[16px]'>Drag and drop uploading, moving objects, and multiple object selection. As easy as working on your desktop.</p>
-          <div className='mt-[64px] w-[1120px] h-[482px] flex justify-between items-start'>
-            <div className='w-[560px] h-[415px] flex flex-col justify-between'>
+          <div className='mt-[64px] w-[1120px] h-[482px] flex justify-between items-start max-xl:w-[900px] max-lg:w-[600px] max-lg:flex-col max-lg:items-center max-lg:gap-[60px] max-sm:w-[300px]'>
+            <div className='w-[560px] h-[415px] flex flex-col justify-between max-xl:w-[460px] max-sm:w-[300px]'>
               <div className='w-full h-[30px] flex gap-[32px] items-center'>
                 <p className='w-[91px] h-full rounded-[4px] bg-gray2-100 text-white text-[11px] flex items-center justify-center'>File previews</p>
                 <p className='text-[12px] text-grayergray-100'>Column view</p>
@@ -120,7 +120,7 @@ function App() {
               </div>
               <img src={Sec3_img} alt="" />
             </div>
-            <div className='w-[373px] h-full flex flex-col justify-between'>
+            <div className='w-[373px] h-full flex flex-col justify-between max-sm:w-[300px]'>
               <p className='text-white text-[18px]'>File previews</p>
               <p className='text-[16px] text-graybr-100'>Preview any media type, including video and <br /> audio.</p>
               <p className='text-white text-[18px]'>Check out our example app</p>
@@ -148,10 +148,10 @@ function App() {
       </section>
 
       {/* simple api */}
-      <section className='w-full h-[700px] bg-regular-100 flex justify-center items-end'>
-        <div className='w-[1120px] h-[511px] flex justify-between'>
+      <section className='w-full h-[700px] bg-regular-100 flex justify-center items-end max-lg:h-[1200px] max-lg:items-center'>
+        <div className='w-[1120px] h-[511px] flex justify-between max-xl:w-[900px] max-lg:w-[600px] max-lg:h-[800px] max-lg:flex-col max-lg:justify-center max-lg:items-center max-sm:w-[300px]'>
           {/* simple api info */}
-          <div className='w-[429px] h-full flex flex-col gap-[16px]'>
+          <div className='w-[429px] h-full flex flex-col gap-[16px] max-sm:w-[300px]'>
             <p className='text-[36px]/[43px] text-white'>Simple and convenient APIs</p>
             <p className='text-[14px] text-graybr-100'>Built from the ground-up for interoperable authentication.</p>
             <p className='text-[14px] text-graybr-100'>Fast and easy to implement using our powerful library clients. <br /> Asset optimization and image transformation coming soon!</p>
@@ -172,7 +172,7 @@ function App() {
             </div>
           </div>
           
-          <div className='w-[526px] h-[356px] flex flex-col justify-between'>
+          <div className='w-[526px] h-[356px] flex flex-col justify-betwee max-xl:w-[426px] max-sm:w-[300px]'>
               <div className='w-full h-[30px] flex gap-[22px] items-center'>
                 <p className='w-[91px] h-full rounded-[4px] bg-gray2-100 text-white text-[11px] flex items-center justify-center'>Upload a file</p>
                 <p className='text-[12px] text-grayergray-100'>Download a file</p>
@@ -186,16 +186,16 @@ function App() {
       </section>
 
       {/* integrates */}
-      <section className='w-full h-[357px] flex justify-center bg-regular-100'>
-        <div className='w-[1120px] h-full flex justify-between'>
-          <div className='w-[429px] [h-325px] flex flex-col justify-between'>
+      <section className='w-full h-[357px] flex justify-center bg-regular-100 max-lg:h-[1000px] max-lg:items-center'>
+        <div className='w-[1120px] h-full flex justify-between max-xl:w-[900px] max-lg:w-[600px] max-lg:flex-col max-lg:items-center max-lg:h-[700px] max-sm:w-[300px]'>
+          <div className='w-[429px] [h-325px] flex flex-col justify-between max-lg:h-[350px] max-sm:w-[300px]'>
             <p className='text-[36px] text-white'>Integrates natively with Supabase Auth</p>
             <p className='text-[14px] text-graybr-100'>Using Postgres Row Level Security to create Object access rules.</p>
             <p className='text-[14px] text-graybr-100'>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
             <button className='w-[205px] h-[36px] rounded-[4px] flex justify-center items-center gap-[8px] bg-gray2-100'><img src={Int_but} alt="" /><p className='text-[14px] text-graybr-100'>Expore documentation</p></button>
           </div>
 
-          <div className='w-[528px] h-full flex flex-col justify-between'>
+          <div className='w-[528px] h-full flex flex-col justify-between max-xl:w-[428px] max-lg:h-[300px] max-sm:w-[300px]'>
               <div className='w-full h-[30px] flex gap-[20px] items-center'>
                 <p className='w-[164px] h-full rounded-[4px] bg-gray2-100 text-white text-[11px] flex items-center justify-center'>Public access to a bucket</p>
                 <p className='text-[12px] text-grayergray-100'>Public access to a folder</p>
@@ -210,15 +210,15 @@ function App() {
 
       {/* last section */}
       <section className='bg-regular-100 w-full h-[400px] flex flex-col justify-center items-center gap-[32px]'>
-        <p className='text-[36px] text-grayb'>Build in a weekend, <span className='text-white'>scale to millions</span></p>
+        <p className='text-[36px] text-grayb max-sm:text-[20px]'>Build in a weekend, <span className='text-white'>scale to millions</span></p>
         <button className='h-[30px] w-[128px] bg-butbg-100 text-white font-bold text-[12px] rounded-[4px] cursor-pointer'><p>Start your project</p></button>
       </section>
 
-      <footer className='w-full h-[602px] flex flex-col justify-center items-center bg-regular-100 gap-[100px]'>
+      <footer className='w-full h-[700px] flex flex-col justify-center items-center bg-regular-100 gap-[100px] max-sm:h-[1000px] max-sm:justify-start'>
         {/* footer b1 */}
-        <div className='w-[1120px] h-[208px] flex'>
+        <div className='w-[1120px] h-[208px] flex max-xl:w-[900px] max-lg:w-[600px] max-sm:w-[300px] max-sm:h-[600px] max-sm:flex-col'>
           {/* icons */}
-          <div className='w-[352px] h-full'>
+          <div className='w-[352px] h-full max-sm:h-[100px]'>
             <img src={logo} alt="" />
             <div className='w-full h-[20px] flex gap-[30px] items-center mt-[32px]'>
               <img src={Ftwitter} alt="" /><img src={Fgit} alt="" />
@@ -226,8 +226,8 @@ function App() {
           </div>
 
           {/* all texts */}
-          <div className='w-[736px] h-full flex justify-between'>
-            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+          <div className='w-[736px] h-full flex justify-between max-sm:h-[1200px] max-sm:flex-col max-sm:justify-start  max-sm:w-[300px]'>
+            <div className='[w-160px] h-full flex flex-col gap-[10px] max-sm:h-[250px]'>
               <p className='text-[14px] text-grayergray-100'>Product</p>
               <p className='text-[14px] text-eeeeee-100'>Database</p>
               <p className='text-[14px] text-eeeeee-100'>Authentication</p>
@@ -237,7 +237,7 @@ function App() {
               <p className='text-[14px] text-eeeeee-100'>Pricing</p>
             </div>
 
-            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+            <div className='[w-160px] h-full flex flex-col gap-[10px] max-sm:h-[170px]'>
               <p className='text-[14px] text-grayergray-100'>Resources</p>
               <p className='text-[14px] text-eeeeee-100'>Support</p>
               <p className='text-[14px] text-eeeeee-100'>Case Studies</p>
@@ -245,14 +245,14 @@ function App() {
               <p className='text-[14px] text-eeeeee-100'>Terms of service</p>
             </div>
 
-            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+            <div className='[w-160px] h-full flex flex-col gap-[10px] max-sm:h-[170px]'>
               <p className='text-[14px] text-grayergray-100'>Developers</p>
               <p className='text-[14px] text-eeeeee-100'>Documentation</p>
               <p className='text-[14px] text-eeeeee-100'>API Reference</p>
               <p className='text-[14px] text-eeeeee-100'>Guides</p>
             </div>
 
-            <div className='[w-160px] h-full flex flex-col gap-[10px]'>
+            <div className='[w-160px] h-full flex flex-col gap-[10px] max-sm:h-[300px]'>
               <p className='text-[14px] text-grayergray-100'>Company</p>
               <p className='text-[14px] text-eeeeee-100'>Blog</p>
               <p className='text-[14px] text-eeeeee-100'>Open Source</p>
@@ -265,7 +265,7 @@ function App() {
         </div>
 
         {/* last block */}
-        <div className='w-[1120px] h-[73px] border-t-[1px] border-grayergray-100 flex justify-between items-center'>
+        <div className='w-[1120px] h-[73px] border-t-[1px] border-grayergray-100 flex justify-between items-center max-xl:w-[900px] max-lg:w-[600px] max-sm:w-[300px] max-sw:h-[100px] max-sm:relative max-sm:top-[150px]'>
           <p className='text-[16px] text-grayergray-100'>© Supabase Inc</p>
           <div className='w-[140px] h-[40px] flex justify-between items-center'>
             <img src={F1} alt="" />
